@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Navbar" customModule="SmartControl" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="UmZ-r6-ia8" id="mm8-MQ-us1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UmZ-r6-ia8">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zvp-tY-YJy">
+                    <rect key="frame" x="10" y="0.0" width="381" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFV-du-PGG" customClass="DesignableView" customModule="SmartControl" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_person1" translatesAutoresizingMaskIntoConstraints="NO" id="UpN-W6-iKO">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="27j-QF-LdX"/>
+                                <constraint firstAttribute="trailing" secondItem="UpN-W6-iKO" secondAttribute="trailing" id="BXa-IC-hIW"/>
+                                <constraint firstItem="UpN-W6-iKO" firstAttribute="leading" secondItem="HFV-du-PGG" secondAttribute="leading" id="VWz-I5-r3U"/>
+                                <constraint firstAttribute="bottom" secondItem="UpN-W6-iKO" secondAttribute="bottom" id="X9P-fW-GuQ"/>
+                                <constraint firstItem="UpN-W6-iKO" firstAttribute="top" secondItem="HFV-du-PGG" secondAttribute="top" id="cTg-Pd-Q59"/>
+                                <constraint firstAttribute="width" constant="60" id="dbP-Qs-8Mo"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="roundCorner" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.84890373385682394" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fM-3B-NSC">
+                            <rect key="frame" x="68" y="7.6666666666666679" width="313" height="45"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JOK-LF-vFW">
+                                    <rect key="frame" x="0.0" y="0.0" width="268" height="45"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHC-Nm-9DA">
+                                            <rect key="frame" x="0.0" y="0.0" width="268" height="21"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Hello, ">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="18" name="Poppins-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="Shahid">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="18" name="Poppins-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="!">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="18" name="Poppins-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Control everything from one spot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwx-hW-5vA">
+                                            <rect key="frame" x="0.0" y="31" width="268" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="JQV-bH-xBl">
+                                    <rect key="frame" x="268" y="0.0" width="45" height="45"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbo-Mu-zTi" customClass="DesignableView" customModule="SmartControl" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6c5-t1-9x0">
+                                                    <rect key="frame" x="12" y="15.333333333333329" width="21" height="14.333333333333336"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <gestureRecognizers/>
+                                                    <imageReference key="image" image="list.bullet" catalog="system" symbolScale="medium"/>
+                                                </imageView>
+                                            </subviews>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstItem="6c5-t1-9x0" firstAttribute="centerX" secondItem="qbo-Mu-zTi" secondAttribute="centerX" id="Khi-p6-tdW"/>
+                                                <constraint firstAttribute="width" constant="45" id="s0X-BV-MWa"/>
+                                                <constraint firstAttribute="height" constant="45" id="scy-Zq-gmf"/>
+                                                <constraint firstItem="6c5-t1-9x0" firstAttribute="centerY" secondItem="qbo-Mu-zTi" secondAttribute="centerY" id="xuH-py-kq0"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="roundCorner" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="0.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="NU6-06-qNN"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zvp-tY-YJy" secondAttribute="bottom" id="48D-RO-LK5"/>
+                <constraint firstItem="zvp-tY-YJy" firstAttribute="top" secondItem="UmZ-r6-ia8" secondAttribute="top" id="FwE-l3-PGh"/>
+                <constraint firstItem="NU6-06-qNN" firstAttribute="trailing" secondItem="zvp-tY-YJy" secondAttribute="trailing" constant="10" id="e19-fl-UBZ"/>
+                <constraint firstItem="zvp-tY-YJy" firstAttribute="leading" secondItem="NU6-06-qNN" secondAttribute="leading" constant="10" id="ksL-8l-g4W"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-554.96183206106866" y="-1211.9718309859156"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_person1" width="540" height="360"/>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
